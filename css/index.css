@@ -1,0 +1,239 @@
+.inline_block{
+    display:inline-block;
+    vertical-align: top;
+}
+
+.LogoFont{
+    font-family: "gala-triline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: #4BA8FB;
+    margin: 0;
+}
+.navigation{
+    border-bottom: 1px;
+    border-bottom-style: solid;
+}
+nav{
+    width: 82%;
+    padding: 1%;
+}
+ul{
+    width: 60%;
+    margin-left: auto;
+}
+.pads{
+    padding-left: 8%;
+}
+.font{   
+    font-family: "area-normal", sans-serif;
+    font-weight: 400px;
+
+}
+.fontNav{
+    font-weight: bold;
+    font-size: 24px;
+}
+.fontHead{
+    font-weight: bold;
+    font-size: 64px;
+    margin-bottom: 5px; 
+}
+.fontTitle{
+    font-weight: 600px;
+    font-size: 32px;
+    margin-top: 5px;
+}
+.profilepic{
+    padding-top: 6%;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.GridIntro{
+    margin-left: 30%;
+    margin-top: 30%;
+    display: inline-block;
+    justify-content: center;
+}
+.buttonstyle{
+    background-color: #35C5FD;
+    border: solid;
+    border-width: 1px;
+    font-family: 'area-normal', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.AboutMeTitle{
+    font-size: 30px;
+}
+.AboutMeDesc{
+    width: 40%;
+}
+.SkillsTitle{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+    text-underline-offset: 16px;
+}
+.flex-container{
+    display: flex;
+}
+.skillcontainer{
+    width: 10%;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 20px;
+    filter: drop-shadow(10px 10px 16px rgba(0,0,0,0.25));
+}
+.skillfont{
+    font-size: 24px;
+}
+.testingcolor{
+    background-color: #35C5FD;
+}
+.empathycolor{
+    background-color: #4BA8FB;
+}
+.wireframingcolor{
+    background-color: #ADB3F8;
+}
+.toolstitle{
+    font-size:20px;
+    text-align: center;
+}
+.marginremove{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.marginadd{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.toolsmargin{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.spacearound{
+    justify-content: space-around;
+}
+.center{
+    justify-content: center;
+}
+.workGrid{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px;
+    column-gap: 50px;
+    justify-content: center;
+}
+.workitem1{
+    grid-column: 1;
+    border-radius: 20px;
+    padding-left: 6%;
+    padding-right: 6%;
+    filter: drop-shadow(10px 10px 16px rgba(0,0,0,0.25));
+}
+.workitem2{
+    grid-column: 2;
+    background-color: #8CDCF8;
+    border-radius: 20px;
+    padding-left: 6%;
+    padding-right: 6%;
+    filter: drop-shadow(10px 10px 16px rgba(0,0,0,0.25));
+}
+.email{
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 10%;
+
+}
+.margintop{
+    margin-top: 10%;
+}
+.color{
+    background-color: #F3F3F3;
+}
+.headercolor{
+    background-color: white;
+    margin-top: -20px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.size{
+    width: 50px;
+    height: 50px;
+    padding-left: 20px;
+}
+.sizemail{
+    width: 60px;
+    height: 60px;
+    transform: translate(0px, 5px);
+}
+.paddingcopyright{
+    padding-left: 20px;
+}
+footer{
+    border-top: 1px;
+    border-top-style: solid;
+    background-color: #35C5FD;
+    margin-top: -20px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.LogoFontFooter{
+    color: black;
+    padding-left: 20px;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 20% 60%;
+}
+.footernav{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 4%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+@media only screen and (max-width: 600px){
+    .flex-container{
+        display: flex;
+    }
+    .skillcontainer{
+        width: 100%;
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+        border-radius: 20px;
+        filter: drop-shadow(10px 10px 16px rgba(0,0,0,0.25));
+    }
+    .workGrid{
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 300px 300px;
+        justify-content: center;
+        row-gap: 50px;
+        grid-template-areas: 
+        "umami"
+        "forlorn"
+        ;
+    }
+    .workitem2{
+        grid-column: 1;
+        grid-row: 2;
+        background-color: #8CDCF8;
+        border-radius: 20px;
+        padding-left: 6%;
+        padding-right: 6%;
+        filter: drop-shadow(10px 10px 16px rgba(0,0,0,0.25));}
+    }
