@@ -14,6 +14,8 @@
 .navigation{
     border-bottom: 1px;
     border-bottom-style: solid;
+    width: 100%
+
 }
 nav{
     width: 82%;
@@ -53,15 +55,15 @@ ul{
     grid-template-columns: auto auto;
 }
 .GridIntro{
-    margin-left: 30%;
-    margin-top: 30%;
+    margin-left: 15%;
+    margin-top: 20%;
+    margin-right: 35%;
     display: inline-block;
     justify-content: center;
 }
 .buttonstyle{
     background-color: #35C5FD;
-    border: solid;
-    border-width: 1px;
+    border-radius: 12px;
     font-family: 'area-normal', sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -71,6 +73,9 @@ ul{
 }
 .AboutMeDesc{
     width: 40%;
+}
+.bodytext{
+    font-size: 24px;
 }
 .SkillsTitle{
     text-align: center;
@@ -82,7 +87,7 @@ ul{
     display: flex;
 }
 .skillcontainer{
-    width: 10%;
+    width: 20%;
     text-align: center;
     padding-top: 0px;
     padding-bottom: 2%;
@@ -92,7 +97,7 @@ ul{
     filter: drop-shadow(10px 10px 16px rgba(0,0,0,0.25));
 }
 .skillfont{
-    font-size: 24px;
+    font-size: 32px;
 }
 .testingcolor{
     background-color: #35C5FD;
@@ -127,8 +132,8 @@ ul{
 }
 .workGrid{
     display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 300px;
+    grid-template-columns: 579px 579px;
+    grid-template-rows: 579px;
     column-gap: 50px;
     justify-content: center;
 }
@@ -147,6 +152,12 @@ ul{
     padding-right: 6%;
     filter: drop-shadow(10px 10px 16px rgba(0,0,0,0.25));
 }
+.workmargin{
+    padding-top: 55%;
+}
+.workfont{
+    font-size: 32px;
+}
 .email{
     font-weight: 100;
     text-align: center;
@@ -164,6 +175,7 @@ ul{
     margin-top: -20px;
     margin-left: -8px;
     margin-right: -8px;
+    z-index: 1;
 }
 .size{
     width: 50px;
@@ -203,7 +215,24 @@ a{
     color: black;
     text-decoration: none;
 }
-@media only screen and (max-width: 600px){
+p{
+    font-size: 24px;
+}
+@media only screen and (max-width: 800px){
+    .grid-container{
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "profilepic"
+        "about";
+    }
+    .GridIntro{
+        margin-left: 15%;
+        margin-right: 35%;
+        display: inline-block;
+        justify-content: center;
+    }
     .flex-container{
         display: flex;
     }
@@ -211,7 +240,7 @@ a{
         width: 100%;
         text-align: center;
         padding-top: 0px;
-        padding-bottom: 2%;
+        padding-bottom: 10%;
         padding-left: 2%;
         padding-right: 2%;
         border-radius: 20px;
@@ -227,6 +256,15 @@ a{
         "umami"
         "forlorn"
         ;
+    }
+    .skillfont{
+        font-size: 24px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .workmargin{
+        padding-top: 30%;
     }
     .workitem2{
         grid-column: 1;
