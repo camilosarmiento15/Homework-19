@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="https://use.typekit.net/pbt6aqt.css">
         <link rel="stylesheet" href="https://use.typekit.net/xrb2tcj.css">
+        <link rel="stylesheet" href="css/animate.min.css">
         <title>Camilo Sarmiento</title>
     </head>
     <body class="font color">
@@ -23,7 +24,12 @@
         </header>
         <section class="heroImg">
             <div class="grid-container">
-                <div class="GridIntro about">
+                <div class="GridIntro about animate"
+                data-animate="bounceIn"
+                data-duration="1s" 
+                data-delay="0.5s" 
+                data-offset="100" 
+                data-iteration="1">
                     <h1 class="fontHead">I'm Camilo</h1>
                     <h2 class="fontTitle">UX Designer</h2>
                     <p>Always up for a challenge to design compelling products. Learn more about my journey below.</p>
@@ -47,7 +53,12 @@
             <div class="AboutMeTitle SkillsTitle">
                 <h1>Skills</h1>
             </div>
-            <div class="flex-container spacearound">
+            <div class="flex-container spacearound animate"
+            data-animate="bounceIn"
+            data-duration="1s" 
+            data-delay="0.5s" 
+            data-offset="100" 
+            data-iteration="1">
                 <div class="skillcontainer testingcolor">
                     <h3 class="skillfont">Usability Testing</h3>
                     <p class="bodytext">Understanding how a user interacts with your design may uncover insights you didn't foresee</p>
@@ -127,6 +138,7 @@
             </nav>
         </footer>
         <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+        <script src="js/jquery.scrolla.js"></script>
     </body>
     <script src="js/index.js"></script>
 </html>

@@ -6,3 +6,6 @@ $(window).scroll(function(){
         $(".navigation").css({"position": "relative"});
     }
     });
+    $(document).ready(function(){
+        $('.animate').scrolla();
+    });
