@@ -11,10 +11,11 @@
     color: #4BA8FB;
     margin: 0;
 }
+
 .navigation{
     border-bottom: 1px;
     border-bottom-style: solid;
-    width: 100%
+    width: 100%;
 
 }
 nav{
@@ -24,6 +25,11 @@ nav{
 ul{
     width: 60%;
     margin-left: auto;
+    line-height: 2;
+}
+p{
+    font-size: 16px;
+    line-height: 1.5;
 }
 .pads{
     padding-left: 8%;
@@ -63,7 +69,7 @@ ul{
 }
 .buttonstyle{
     background-color: #35C5FD;
-    border-radius: 12px;
+    border-radius: 7px;
     font-family: 'area-normal', sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -139,6 +145,12 @@ ul{
 }
 .workitem1{
     grid-column: 1;
+    background: url(../images/umami.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-color: #8CDCF8;
+    background-size: 32%;
     border-radius: 20px;
     padding-left: 6%;
     padding-right: 6%;
@@ -146,14 +158,19 @@ ul{
 }
 .workitem2{
     grid-column: 2;
-    background-color: #8CDCF8;
+    background: url(../images/FTTF.PNG);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-color: #ADB3F8;
+    background-size: 95%;
     border-radius: 20px;
     padding-left: 6%;
     padding-right: 6%;
     filter: drop-shadow(10px 10px 16px rgba(0,0,0,0.25));
 }
 .workmargin{
-    padding-top: 55%;
+    padding-top: 0%;
 }
 .workfont{
     font-size: 32px;
@@ -218,7 +235,7 @@ a{
 p{
     font-size: 24px;
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 895px){
     .grid-container{
         display: grid;
         grid-template-rows: auto auto;
@@ -229,9 +246,13 @@ p{
     }
     .GridIntro{
         margin-left: 15%;
-        margin-right: 35%;
+        margin-right: 15%;
         display: inline-block;
         justify-content: center;
+        text-align: center;
+    }
+    .GridProfilePic{
+        width:100%
     }
     .flex-container{
         display: flex;
@@ -260,18 +281,26 @@ p{
     .skillfont{
         font-size: 24px;
     }
-    p{
-        font-size: 16px;
-    }
     .workmargin{
-        padding-top: 30%;
+        padding-top: 0%;
     }
     .workitem2{
         grid-column: 1;
         grid-row: 2;
+        background: none;
+        background-color: #ADB3F8;
+        border-radius: 20px;
+        padding-left: 6%;
+        padding-right: 6%;
+        filter: drop-shadow(10px 10px 16px rgba(0,0,0,0.25));
+    }
+    
+    .workitem1{
+        grid-column: 1;
+        grid-row: 1;
+        background: none;
         background-color: #8CDCF8;
         border-radius: 20px;
         padding-left: 6%;
         padding-right: 6%;
-        filter: drop-shadow(10px 10px 16px rgba(0,0,0,0.25));}
-    }
+        filter: drop-shadow(10px 10px 16px rgba(0,0,0,0.25));}}
